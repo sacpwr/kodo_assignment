@@ -2,14 +2,17 @@
 kodo interview assignment
 
 A. For run a project 
+
    1. node version should be above v10
    2. create database "kodo_assignment"
    3. npm i --s
    4. npm run start:dev --for run project
 
 B. Insert data 
-        e.g;
+        
+        e.g;        
         API(POST) : localhost:3000/api/v1/upload-kodo-data
+        
         body : {
                 "data": [
                     {
@@ -28,8 +31,10 @@ B. Insert data
         }
 
 C. Check search API
-      e.g. 
+      
+      e.g.       
       API(POST) : localhost:3000/api/v1/search-kodo-data
+      
       body : {
             "pageNumber":1, 
             "pageSize":10, 
@@ -37,4 +42,5 @@ C. Check search API
       }
     
 D. For run unit test cases
+     
      command : npm test test/test.js
