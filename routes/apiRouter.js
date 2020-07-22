@@ -10,6 +10,10 @@ router.use((req,res,next)=>{
     next();
 })
 
+/* insert data */
 router.post("/upload-kodo-data", kodoController.uploadKodoData);
+
+//search in kodo_data table with pagination
+router.post("/search-kodo-data", kodoController.searchOnData);
 
 module.exports = router;
