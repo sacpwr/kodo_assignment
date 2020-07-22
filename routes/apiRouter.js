@@ -2,16 +2,14 @@
 
 const router = express.Router();
 
-const multipart          = require('connect-multiparty');
-const multipartMiddlewareSac = multipart({
-    uploadDir: appRoot+'/files'
-});
+const kodoController     = require('../controllers/kodoController')
+
 
 router.use((req,res,next)=>{
     console.log(req.path)
     next();
 })
 
-router.post("/upload-kodo-data", multipartMiddleware, kodoController.uploadKodoData);
+router.post("/upload-kodo-data", kodoController.uploadKodoData);
 
 module.exports = router;
