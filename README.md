@@ -4,7 +4,7 @@ kodo interview assignment
 A. For run a project 
 
    1. node version should be above v10
-   2. create database "kodo_assignment"
+   2. create database "kodo_assignment" in mysql
    3. npm i --s
    4. npm run start:dev --for run project
 
