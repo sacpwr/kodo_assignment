@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "env-cmd -f ./../.env mocha -R spec --timeout 1000000",
+    "test": "env-cmd -f ./.env mocha -R spec --timeout 1000000",
     "start": "node entrypoint.js",
     "start:dev": "nodemon -r dotenv/config entrypoint.js dotenv_config_path=./../.env"
   },

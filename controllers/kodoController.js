@@ -148,6 +148,6 @@ exports.searchOnData = async (req,res)=>{
           );
     }catch(exp){
         console.log("search data error : ",exp)
-        res.json(commonHelper.responseFormat(false, {}, {}, exp.msg == null? exp.msg : `Something went Wrong`));
+        res.json(commonHelper.responseFormat(false, {}, {}, exp.msg != null? exp.msg : `Something went Wrong`));
     }
 }
