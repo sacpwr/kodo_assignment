@@ -6,7 +6,7 @@
   "scripts": {
     "test": "env-cmd -f ./.env mocha -R spec --timeout 1000000",
     "start": "node entrypoint.js",
-    "start:dev": "nodemon -r dotenv/config entrypoint.js dotenv_config_path=./../.env"
+    "start:dev": "nodemon -r dotenv/config entrypoint.js dotenv_config_path=./.env"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,7 @@
     "mysql": "^2.17.1",
     "mysql2": "^2.1.0",
     "node-geocoder": "^3.27.0",
-    "nodemon": "^1.19.3",
+    "nodemon": "^1.19.4",
     "path": "^0.12.7",
     "request": "^2.88.2",
     "sequelize": "^5.21.7",
